@@ -1,6 +1,7 @@
 <script>
 	// @ts-nocheck
 	import data from '../../data.json';
+	import MenuCard1 from './common/MenuCard1.svelte';
 	import MenuCard2 from './common/MenuCard2.svelte';
 	const sectionsData = Object.keys(data.menu).map((item) => {
 		return {
@@ -8,6 +9,7 @@
 			code: item
 		};
 	});
+	console.log(sectionsData)
 </script>
 
 <main class="max-w-6xl mx-auto px-4">
@@ -18,7 +20,12 @@
 			</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
 				{#each data.menu[Object.keys(data.menu)[index]] as record}
-					<MenuCard2 {record} />
+					{#if item.title.toLowerCase().includes('drink') == false}
+						<MenuCard2 {record} />
+					{/if}
+					{#if item.title.toLowerCase().includes('drink') == true}
+						<MenuCard1 {record} />
+					{/if}
 				{/each}
 			</div>
 		</section>

@@ -26,7 +26,7 @@
 		</div>
 
 		<div
-			class="text-sm font-medium text-center border-b mb-2 border-gray-200 dark:text-gray-400 dark:border-gray-700"
+			class="text-sm font-medium text-center border-b mb-2 border-gray-200 dark:text-gray-300 dark:border-gray-700"
 		>
 			<ul class="flex flex-wrap justify-center -mb-px items-center text-tertiary-50">
 				<li class="me-2">
@@ -36,7 +36,7 @@
 							console.log(variant);
 						}}
 						class="inline-block {variant === 1
-							? 'active border-primary-600'
+							? 'active border-tertiary-300'
 							: ''} p-4 border-b-2 border-transparent rounded-t-lg">Variant 1</button
 					>
 				</li>
@@ -47,7 +47,7 @@
 							console.log(variant);
 						}}
 						class="inline-block p-4 border-b-2 border-transparent rounded-t-lg {variant === 2
-							? 'active border-primary-600'
+							? 'active border-tertiary-300'
 							: ''}"
 						aria-current="page">Variant 2</button
 					>

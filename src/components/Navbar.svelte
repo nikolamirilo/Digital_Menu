@@ -32,7 +32,7 @@
 							<li>
 								<a
 									href={`#${item.code}`}
-									class="text-lg text-txtPrimary transition duration-300 after:border-b-[3px] after:border-b-tertiary-50"
+									class="text-lg text-txtPrimary transition duration-300 after:border-b-[3px] after:border-b-tertiary-300"
 									class:selected={selectedSection === item.code}
 									on:click={() => selectSection(item.code)}>{item.title}</a
 								>
