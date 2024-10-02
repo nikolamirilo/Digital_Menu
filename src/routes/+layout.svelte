@@ -1,4 +1,5 @@
 <script lang="ts">
+	export const prerender = true;
 	import '../app.postcss';
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import hljs from 'highlight.js/lib/core';
@@ -9,7 +10,6 @@
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import typescript from 'highlight.js/lib/languages/typescript';
 	import { storePopup } from '@skeletonlabs/skeleton';
-
 	// Register Highlight.js languages
 	hljs.registerLanguage('xml', xml); // for HTML
 	hljs.registerLanguage('css', css);
