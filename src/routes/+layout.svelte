@@ -1,5 +1,4 @@
 <script lang="ts">
-	export const prerender = true;
 	import '../app.postcss';
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import hljs from 'highlight.js/lib/core';
