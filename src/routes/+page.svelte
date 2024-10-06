@@ -7,7 +7,7 @@
 
 	// Transform section keys to be more readable
 	$: currentTheme = $theme;
-	$: variant = 1;
+	$: variant = 2;
 </script>
 
 <head>
@@ -36,7 +36,7 @@
 							console.log(variant);
 						}}
 						class="inline-block {variant === 1
-							? 'active border-tertiary-300'
+							? 'active border-white'
 							: ''} p-4 border-b-2 border-transparent rounded-t-lg">Variant 1</button
 					>
 				</li>
@@ -47,7 +47,7 @@
 							console.log(variant);
 						}}
 						class="inline-block p-4 border-b-2 border-transparent rounded-t-lg {variant === 2
-							? 'active border-tertiary-300'
+							? 'active border-white'
 							: ''}"
 						aria-current="page">Variant 2</button
 					>
